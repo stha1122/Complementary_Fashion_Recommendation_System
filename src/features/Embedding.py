@@ -1,17 +1,18 @@
 import pickle
 import torch
 import sys
-sys.path.append(r"C:/Users/Swetha/Desktop/Complete_the_Look_Recommendation_System")
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 import os
-import torch
-import torch.nn as nn
-import torchvision
-import tqdm
+sys.path.append(r"C:/Users/Swetha/Desktop/Complete_the_Look_Recommendation_System")
+
+
+from torch import nn
+from torchvision import models, transforms
 from src.config import config as cfg
 from src.dataset.Dataloader import FashionCompleteTheLookDataloader, FashionProductSTLDataloader
 from src.models.Model import CompatibilityModel
-from torchvision import models
+import tqdm
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class StyleEmbedding:
@@ -31,16 +32,16 @@ class StyleEmbedding:
         """
 
         # get pretrain model and remove the classification layer
-        print("You are using device: %s" % cfg.device)
-        resnet = models.resnet18(pretrained=True).to(cfg.device)
+        print("You are using device: %s" % device)
+        resnet = models.resnet18(pretrained=True).to(device)
         resnet.fc = nn.Identity()
         resnet.eval()
-        transforms = torchvision.transforms.Resize(256)
+        transform = transforms.Resize(256)
         all_features = []
 
         for batch in tqdm.tqdm(data_loader):
-            X = transforms(batch)  # resizes to 256 X 256 for ResNet
-            X = X.float().to(cfg.device)
+            X = transform(batch)  # resizes to 256 X 256 for ResNet
+            X = X.float().to(device)
             with torch.no_grad():
                 batch_features = resnet(X)
                 all_features.append(batch_features)
@@ -62,22 +63,22 @@ class StyleEmbedding:
         """
 
         # get pretrain model and remove the classification layer
-        print("You are using device: %s" % cfg.device)
+        print("You are using device: %s" % device)
         model = CompatibilityModel()
         model.load_state_dict(
-            torch.load(f"{cfg.TRAINED_MODEL_DIR}/trained_compatibility_model_epoch5.pth")[
+            torch.load(f"{cfg.TRAINED_MODEL_DIR}/trained_compatibility_model_epoch5.pth", map_location=device)[
                 "model_state_dict"
             ]
         )
-        model.to(cfg.device)
+        model.to(device)
         model.eval()
-        transforms = torchvision.transforms.Resize(256)
+        transform = transforms.Resize(256)
         all_features = []
 
         for batch in tqdm.tqdm(data_loader):
 
-            X = transforms(batch)  # resizes to 256 X 256 for ResNet
-            X = X.float().to(cfg.device)
+            X = transform(batch)  # resizes to 256 X 256 for ResNet
+            X = X.float().to(device)
             with torch.no_grad():
                 batch_features = model(X)
                 all_features.append(batch_features)
@@ -112,3 +113,4 @@ if __name__ == "__main__":
         data_loader=FashionCompleteTheLookDataloader().single_data_loader(),
         task_name="compatible_product",
     )
+

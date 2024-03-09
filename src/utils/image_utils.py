@@ -8,6 +8,7 @@ from PIL import Image
 from src.config import config as cfg
 
 
+
 def bounding_box_process(img, bounding_box):
     """
     takes in the image and bounding box information,

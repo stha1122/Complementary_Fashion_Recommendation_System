@@ -1,4 +1,4 @@
-# Complete the Look Recommendation System
+# Fashion_Recommendation_System
 
 Building a comprehensive recommendation system prototype for online ecommerce. Please kindly provide proper citation if you plan to use any part of the project.
 

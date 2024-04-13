@@ -99,7 +99,7 @@ def recommend_complementary_products(product_id, task_name="compatible_product",
         product_feature_vec, all_compatible_products_features, "cosine"
     )
 
-    # get query product category and filter the prpduct catelog for the same category
+    # get query product category and filter the product catelog for the same category
     input_product_category = product_metadata["product_type"]
     metadata["compatibility_score"] = compatibility_score.cpu()
 

@@ -38,5 +38,5 @@ Samples of compatible product recommendation
 
 ## Credits
 
-This project is based on [Complete_the_Look_Recommendation_System](https://github.com/chen-bowen/Complete_the_Look_Recommendation_System)).
+This project is based on [Complete_the_Look_Recommendation_System](https://github.com/chen-bowen/Complete_the_Look_Recommendation_System).
 

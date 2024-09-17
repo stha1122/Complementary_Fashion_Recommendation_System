@@ -36,4 +36,7 @@ Samples of compatible product recommendation
 <img width="750" alt="image" src="https://user-images.githubusercontent.com/18410378/146464340-db108af4-ae66-409b-97fc-cb993c7a17bb.png">
 
 
+## Credits
+
+This project is based on [Complete_the_Look_Recommendation_System](https://github.com/chen-bowen/Complete_the_Look_Recommendation_System)).
 

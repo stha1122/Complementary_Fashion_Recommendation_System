@@ -35,13 +35,11 @@ The dataset used is the [shop the look dataset](https://github.com/kang205/STL-D
 https://github.com/user-attachments/assets/cd10177b-1046-4ed6-9503-5c17f8b7aa19
 
 
-## Credits
-
-This project is based on [Complete_the_Look_Recommendation_System](https://github.com/chen-bowen/Complete_the_Look_Recommendation_System).
-
 ## Acknowledgement
 
 This project is based on the work:
+
+Complete the Look Recommendation System  
 https://github.com/chen-bowen/Complete_the_Look_Recommendation_System
 
 Original authors:
@@ -49,3 +47,5 @@ Original authors:
 - Mohammed Almanassra
 - Erima Goyal
 - Oscar Parrilla
+
+This repository reuses parts of the original implementation and introduces additional modifications and experimentation.

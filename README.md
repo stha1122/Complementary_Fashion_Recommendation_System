@@ -24,16 +24,13 @@ The dataset used is the [shop the look dataset](https://github.com/kang205/STL-D
 5. Recommend Compatible Product - Run `cd src`, make sure the in the `recommend.py`, the function `recommend_compatible_products` is being selected, then run ` PYTHONPATH=../:. python recommend.py`
 
 ## Results
-Samples of similar product recommendation
-(on the left is the query product, on the right is the top 5 recommended similar products)
-
-<img width="750" alt="image" src="https://user-images.githubusercontent.com/18410378/146464288-d3960443-a616-49fc-b250-eadb1f751927.png">
-
-
-Samples of compatible product recommendation
-(on the left is the query product, on the right is the top 5 recommended compatible products)
-
-<img width="750" alt="image" src="https://user-images.githubusercontent.com/18410378/146464340-db108af4-ae66-409b-97fc-cb993c7a17bb.png">
+<img width="903" height="552" alt="image" src="https://github.com/user-attachments/assets/752210ab-53f0-4740-9b9d-b4c82f86abc0" />
+<img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/33169f00-e8bb-4550-8379-27a177f21303" />
+<img width="957" height="457" alt="image" src="https://github.com/user-attachments/assets/d4fc4488-7230-4cbd-94bf-eb4645004ed4" />
+<img width="1022" height="488" alt="image" src="https://github.com/user-attachments/assets/deb9a4a4-f046-44a5-a29e-e7dbcb2a7951" />
+<img width="781" height="464" alt="image" src="https://github.com/user-attachments/assets/4e65e177-6d65-4ba7-9760-02846d6c6323" />
+<img width="903" height="502" alt="image" src="https://github.com/user-attachments/assets/2be12cb9-74cb-4e20-8dd8-ceae74dc38a9" />
+<img width="903" height="500" alt="image" src="https://github.com/user-attachments/assets/2a91beb3-214c-4fd3-a33a-780ff9c3ed29" />
 
 
 ## Credits

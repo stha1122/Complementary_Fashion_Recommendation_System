@@ -32,6 +32,8 @@ The dataset used is the [shop the look dataset](https://github.com/kang205/STL-D
 <img width="903" height="502" alt="image" src="https://github.com/user-attachments/assets/2be12cb9-74cb-4e20-8dd8-ceae74dc38a9" />
 <img width="903" height="500" alt="image" src="https://github.com/user-attachments/assets/2a91beb3-214c-4fd3-a33a-780ff9c3ed29" />
 
+https://github.com/user-attachments/assets/cd10177b-1046-4ed6-9503-5c17f8b7aa19
+
 
 ## Credits
 

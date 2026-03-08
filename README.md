@@ -39,3 +39,13 @@ https://github.com/user-attachments/assets/cd10177b-1046-4ed6-9503-5c17f8b7aa19
 
 This project is based on [Complete_the_Look_Recommendation_System](https://github.com/chen-bowen/Complete_the_Look_Recommendation_System).
 
+## Acknowledgement
+
+This project is based on the work:
+https://github.com/chen-bowen/Complete_the_Look_Recommendation_System
+
+Original authors:
+- Bowen Chen
+- Mohammed Almanassra
+- Erima Goyal
+- Oscar Parrilla
